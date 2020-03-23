@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Sen&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Sen', sans-serif;
+    color: white;
+}
+body{
+    background-color: #121212;
+}
+nav{
+    font-size: 2.6ch;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    padding: 25px;
+    background-color: #171717;
+}
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 2rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 21px;
+}
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 400px){
+    .toggle-button{
+        display: flex;
+    }
+    .navlinks.active{
+        display: none
+    }
+    nav{    
+        font-size: 2ch;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+    }
+    nav.active{
+        display: none;
+    }
+    .li{
+        margin-bottom: 8px;
+    }
+    #postForm{
+        width: 50vw;
+    }
+}
+.li{
+    display: inline-block;
+    margin-left: 5vw;
+    padding: 1.2vh;
+    background-color: #00000000;
+    border-radius: 10px;
+    transition: 400ms;
+    font-weight: bold;
+    color: whitesmoke;
+}
+.li:hover{
+    background-color: #11548f;
+}
+ul{
+    margin-left: 50%;
+}
+main{
+    text-align: center;
+}
+.heading{
+    align-items: center;
+    font-family: 'Sen', sans-serif;
+    background-image: url('img/orion-nebula.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-shadow: 0px 0px 5px black;
+    padding: 3%;
+    mask-image: linear-gradient(to top, transparent 1%, black 10%);
+}
+.blackblock{
+    font-size: 3ch;
+}
+.startButton {
+    background-color: #0B9C92;
+    border-radius: 15px;
+    border-style: none;
+    color: white;
+    cursor: pointer;
+    padding: 3%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 3ch;
+    transition: 500ms;
+    font-size: 3ch;
+}
+.startButton:hover{
+    background-color: #0C86A6;
+    border-radius: 5px;
+}
+.formBox{
+    display: none;
+    margin-top: 10vh;
+    margin-bottom: 40vh;
+    margin-top: 5vh;
+}
+.form{
+    border-style: none;
+    padding: 10%;
+    border-radius: 15px;
+    background-color: #0B365C;
+    width: 40vw;
+    height: 40vh;
+    font-size: 3ch;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.formInput{
+    font-size: 1.5ch;
+    width: 50%;
+    color: black;
+}
+#postForm{
+    font-size: 2.4ch;
+    width: 90%;
+}
+.about{
+    margin-top: 15vh;
+}
+.title{
+    font-size: 4.5ch;
+}
+.anchor{
+    text-decoration: none;
+    transition: 400ms;
+}
+.decoration{
+    color: #1A81DB;
+}
+.cutDiv{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}

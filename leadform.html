@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orion Leads</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/leadsPost.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navlinks">
+                <a href="/"><div class="li">Orion</div></a>
+                <a href="about.html"><div class="li">Sobre</div></a>
+            </div>
+        </nav>
+    </header>
+    <main class="cutDiv">
+        <div class="formBox" id="formBox" style="display:initial">
+            <span class="blackblock">Preencha o formulário abaixo para ser contactado pela Cruzeiro do Sul</span>
+            <form action="php/leadsPost.php" method="POST" class="form">
+                <div class="loginItem"><label for="name">nome </label><input class="formInput" type="text" name="name" id="name"></div><br>
+                <div class="loginItem"><label for="email">email </label><input class="formInput" type="email" name="email" id="email"></div><br>
+                <div class="loginItem"><label for="tel">Telefone </label><input class="formInput" type="tel" name="tel" id="tel"></div>
+                <input type="submit" value="Enviar" class="startButton" id="postFormLeadsFB">
+            </form>
+        </article>
+    </main>
+</body>
+</html>
